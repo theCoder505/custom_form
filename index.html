@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="tableHolder">
+        <!--header start-->
+        <div class="container mt-4" id="header">
+            <div class="row">
+                <!-- <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="navbar-brand" href="#">
+                        <img class="main-logo" src="https://thecoder505.github.io/design_form/assets/img/logo-cbs.png" alt="logo-cbs">
+                    </a>
+                </div> -->
+
+                <div class="col-12 col-md-8 text-center text-md-end text-lg-end mt-md-4 mt-0">
+                    <div class="btn-language">
+                        <button onclick="window.location.href='form1FR.php'">Français </button>
+                        <button onClick="window.print()">Print Form</button>
+                        <button onclick="window.location.href='logout.php'">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header end-->
+
+        <hr>
+        <hr>
+        <hr>
+
+        <div id="sectionHolder">
+            <div class="row firstSection">
+                <div class="col-md-6 col-6">
+                    <img src="https://thecoder505.github.io/design_form/assets/img/logo-mintz.jpg" alt="" class="LogoImage">
+                </div>
+
+                <div class="col-md-6 col-6">
+                    <h4 class="specRecord">
+                        CRIMINAL RECORD VERIFICATION <br> Informed Consent Form
+                    </h4>
+                </div>
+            </div>
+
+
+            <div id="infoTable">
+                <div class="personal bg_gray">
+                    A. Personal Information
+                </div>
+
+
+                <div class="row row_margin_remove b_top">
+                    <div class="col-7 col-md-7 print7 border_right border_bottom">
+                        <div class="dflex ">
+                            <span>Surname (last Name): </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5 print5 border_bottom">
+                        <div class="dflex">
+                            <span>Given Names(s): </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-7 col-md-7 print7 border_right border_bottom">
+                        <div class="dflex ">
+                            <span>Surname (last name) at birth: </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5 print5 border_bottom">
+                        <div class="dflex">
+                            <span>Former name(s): </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-12 print12 border_bottom">
+                        <div class="dflex">
+                            <span>Place of birth (City, Province/State, Country):  </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-7 col-md-7 border_right border_bottom">
+                        <div class="dflex ">
+                            <span>Date of birth (YYYY-MM-DD): </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5 border_bottom">
+                        <div class="row">
+                            <div class="col-4">
+                                Sex (check one)
+                            </div>
+                            <div class="col-4 text-center">
+                                <input type="checkbox" value="female" id="female" name="gender" />
+                                <label for="female" class="labelUp">Female</label>
+                            </div>
+                            <div class="col-4 text-center">
+                                <input type="checkbox" value="male" id="male" name="gender" oninput="this.className = ''" required="" />
+                                <label for="male" class="labelUp"> Male  </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-7 col-md-7 border_right border_bottom">
+                        <div class="dflex ">
+                            <span>Phone number(s): </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5 border_bottom">
+                        <div class="dflex">
+                            <span>Email address: </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 mb-2">
+                        Current Home Address
+                    </div>
+
+                    <!-- 1:4:1:2:2:2 -->
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                             Number 
+                        </label>
+                    </div>
+
+                    <div class="col-4 col-md-4">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                            Street 
+                        </label>
+                    </div>
+
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                            Apartment 
+                        </label>
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                            City 
+                        </label>
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                            Province/Territory/State 
+                        </label>
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                        <label for="text" class="cstmLvlsize">
+                            Postal/ZIP code 
+                        </label>
+                    </div>
+
+                    <!-- -------------------------------------------------------------------  -->
+
+                    <!-- prev address  -->
+                    <div class="col-12 mb-2">
+                        Previous Address(es) Within the Last 5 Years (attach additional page if necessary)
+                    </div>
+
+                    <!-- first row of input addr -->
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-4 col-md-4">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+
+                    <!-- second row of inputs prev addr  -->
+                    <div class="col-12 mb-2"></div>
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-4 col-md-4">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-1 col-md-1">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+
+                    <div class="col-2 col-md-2">
+                        <input type="text" class="col input_bottom">
+                    </div>
+                    <div class="col-12 mb-2"></div>
+
+
+
+
+                    <!-- -------------------------------------------------------------------  -->
+                    <!-- starting B  -->
+                    <div class="col-12 personal bg_gray border_bottom b_top">
+                        B. Reason for the Criminal Record Verification
+                    </div>
+
+                    <div class="col-12 col-md-12 print6 border_bottom">
+                        <div class="dflex ">
+                            <span>Reason for Request (example: Employment – Employer – Job Title): </span>
+                            <input type="text" class="input_personal col" disabled value="Due Diligence">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 print6 border_bottom">
+                        <div class="dflex ">
+                            <span>Organization Requesting Search: </span>
+                            <input type="text" class="input_personal col" disabled value="EVERIFILE">
+                        </div>
+                    </div>
+
+                    <div class="col-7 col-md-7 print7 border_right">
+                        <div class="dflex ">
+                            <span>Contact Name: </span>
+                            <input type="text" class="input_personal col" value="CUSTOMER SUPPORT" disabled>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5 print5">
+                        <div class="dflex">
+                            <span>Contact Phone Number: </span>
+                            <input type="text" class="input_personal col text_right" value="1.855.383.7434/" disabled>
+                            <a href="customer.support@everifile.com">customer.support@everifile.com</a>
+                        </div>
+                    </div>
+
+                    <!-- -------------------------------------------------------------  -->
+                    <!-- number C related form  -->
+                    <div class="col-12 personal bg_gray border_bottom b_top">
+                        C. Informed Consent
+                    </div>
+
+                    <div class="col-12 py-4">
+                        <span class="search_weight">SEARCH AUTHORIZATION </span>
+                        <span class="rest_words">
+                            – I HEREBY CONSENT TO THE SEARCH OF the RCMP National Repository of Criminal Records based on the name(s), date of birth and where used, 
+                            the declared criminal record history provided by myself. I understand that this verification of the National Repository of Criminal Records is not being confirmed by 
+                            &nbsp;&nbsp; fingerprint comparison which is the only true means by which to confirm if a criminal record exists in the National Repository of Criminal Records.
+                        </span>
+                    </div>
+
+                    <!-- police information  -->
+                    <div class="col-12 b_top pol_info">
+                        <span class="rest_words">
+                            POLICE INFORMATION SYSTEM(S) – I HEREBY CONSENT TO THE SEARCH OF police information systems, as part of a Police Information Check, which will consist of a search of 
+                            the following systems (check applicable):
+                        </span>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 print4 lg_p_left_cstm">
+                                ☒ CPIC investigative Data Bank
+                            </div>
+                            <div class="col-lg-4 col-md-4 print4">
+                                ☐ Police Information Portal (PIP)
+                            </div>
+                            <div class="col-lg-4 col-md-0 print6"></div>
+                            <div class="col-lg-4 col-md-4 print3 lg_p_left_cstm">
+                                ☐ OTHER
+                            </div>
+                            <div class="col-lg-8 col-md-0 print8"></div>
+                        </div>
+                    </div>
+
+                    <!-- authorisation and waviour  -->
+                    <div class="col-12 py-4 b_top">
+                        <span class="search_weight"> AUTHORIZATION AND WAIVER </span>
+                        <span class="p_normal">
+                            to provide a confirmation of criminal record or any police information. 
+                        </span>
+
+
+                        <div class="py-3 p_normal">
+                            <div id="helperHolder">
+                                I certify that the information set out by me in this application is true and correct to the best of my ability. I consent to the release of the results of the criminal record checks to
+                                <div id="underneethHolder">
+                                    <div class="main_text">
+                                        <u> Mintz Global Screening Inc. and EVERIFILE,  </u> &nbsp;
+                                    </div>
+                                    <div class="underneath_text">
+                                        Company Name
+                                    </div>
+                                </div>
+                                <div id="underneethHolder">
+                                    <div class="main_text">
+                                        located in <u> located in Toronto, Canada and, SMYRNA GEORGIA, USA. </u>
+                                    </div>
+                                    <div class="underneath_text">
+                                        City and Country
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-2 pt-1 p_normal">
+                            <div id="helperHolder">
+                                I hereby release and forever discharge all members and employees of the processing Police Service and the Royal Canadian Mounted Police from any and all actions, claims and demands for damages, loss or injury howsoever arising which may hereafter be sustained
+                                by myself as a result of the disclosure of information by the
+                                <div id="underneethHolder">
+                                    <div class="cobourg">
+                                        Cobourg Police Service &nbsp;
+                                    </div>
+                                    <div class="underneath_text">
+                                        Name of Processing Police Service
+                                    </div>
+                                </div>
+
+
+                                <div id="underneethHolder">
+                                    <div class="main_text">
+                                        to <u>Mintz Global Screening Inc. and EVERIFILE, </u>
+                                    </div>
+                                    <div class="underneath_text text-center">
+                                        Company Name
+                                    </div>
+                                </div>
+                                <div id="underneethHolder">
+                                    <div class="main_text">
+                                        &nbsp; <u> located in Toronto, Canada and, SMYRNA GEORGIA, USA. </u>
+                                    </div>
+                                    <div class="underneath_text text-center">
+                                        City and Country
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------one div underneeth done--------------  -->
+
+
+
+
+                    </div>
+
+                    <!-- applicant signature  -->
+                    <div class="b_top col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-6 print6 py-1">
+                                <!-- Signature of Applicant -->
+                                <div class="sign">Signature of Applicant</div>
+                                <input type="text" class="col sign_input">
+                            </div>
+
+                            <div class="col-12 col-lg-2 col-md-2 print2 border_left_right py-1">
+                                <label for="applicantionDate">Date</label></br>
+
+                                <center>Year – Month - Day</center>
+                                <input class="text-start text-md-center col" id="applicantionDate" name="applicantionDate" type="text" oninput="this.className = ''" required="" />
+
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 print4 py-1">
+                                <p>Signed at</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-3 print6">
+                                        <input id="singedAtCity" name="singedAtCity" type="text" oninput="this.className = ''" required="" class="col" />
+                                        <label for="singedAtCity">City</label>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-9 print6">
+                                        <input class="col" id="singedAtProvinceTerritory" name="singedAtProvinceTerritory" type="text" oninput="this.className = ''" required="" />
+                                        <label for="singedAtCity">Province/Territory</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Identification Verification  -->
+                    <div class="col-12">
+                        <div class="row bg_gray border_bottom b_top">
+
+                            <div class="col-lg-6 col-md-6 print6 col-12">
+                                D. Identification Verification
+                            </div>
+                            <div class="col-lg-3 col-md-3 print3 col-12 p_normal">
+                                ☐ Physical Identity Verification
+                            </div>
+                            <div class="col-lg-3 col-md-3 print3 col-12 p_normal">
+                                ☐ Electronic Identity Verification
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6 print6 border_right">
+                        <div class="dflex ">
+                            <span>Witnessing Agent’s Name: </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 print6">
+                        <div class="dflex">
+                            <span>Identification Verified: </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6 print6 border_right b_top">
+                        <div class="dflex py-3">
+                            <span> Witnessing Agent’s Signature: </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 print6 b_top">
+                        <div class="dflex">
+                            <span>
+                                Type of Photo ID Viewed <br>
+                                (Government Issued) & Secondary ID
+                            </span>
+                            <input type="text" class="input_personal col">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

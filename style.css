@@ -1,0 +1,140 @@
+body {
+    font-size: 14.5px;
+}
+
+input[type="text"][disabled] {
+    background-color: transparent;
+    color: black;
+}
+
+#sectionHolder {
+    max-width: 90vw;
+    margin: 25px auto;
+}
+
+.LogoImage {
+    width: 220px;
+    height: 100px;
+}
+
+.firstSection {
+    margin: 15px auto;
+}
+
+.specRecord {
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    text-align: right;
+}
+
+#infoTable {
+    border: 2px solid black;
+}
+
+.bg_gray {
+    background-color: gray;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 3px 15px;
+}
+
+.firstSection {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.row_margin_remove {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.dflex {
+    display: flex;
+    padding: 5px 0px;
+}
+
+.border_bottom {
+    border-bottom: 2px solid black;
+}
+
+.input_bottom {
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+
+.border_right {
+    border-right: 2px solid black;
+}
+
+.b_top {
+    border-top: 2px solid black;
+}
+
+.border_left_right {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.cstmLvlsize {
+    font-size: 12px;
+}
+
+.text_right {
+    text-align: right;
+    padding: 0px;
+}
+
+.search_weight {
+    font-weight: 700;
+}
+
+.rest_words {
+    font-size: 15.5px;
+}
+
+.pol_info {
+    padding: 10px 15px;
+}
+
+.lg_p_left_cstm {
+    padding-left: 85px;
+}
+
+.sign_input {
+    height: 70%;
+}
+
+.p_normal {
+    font-weight: normal;
+    font-size: 15.5px;
+}
+
+#helperHolder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_text {
+    font-size: 15.5px;
+}
+
+.underneath_text {
+    font-size: 10.5px;
+    color: black;
+}
+
+.cobourg {
+    font-weight: 700;
+}
+
+
+/* .input_personal {
+    width: 100%;
+} */
+
+input {
+    border: none;
+    outline: none;
+}

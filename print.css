@@ -1,0 +1,13 @@
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important;
+        -moz-print-color-adjust: exact !important;
+        /* font-size: 12.5px; */
+    }
+    /* .text_right {
+        font-size: 10px;
+    } */
+    .lg_p_left_cstm {
+        padding-left: 50px;
+    }
+}
